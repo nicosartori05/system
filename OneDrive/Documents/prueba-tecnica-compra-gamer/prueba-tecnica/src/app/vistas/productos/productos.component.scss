@@ -1,0 +1,38 @@
+#productos{
+    list-style: none;
+    padding: 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px){
+
+    #menuFiltro{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    #menuFiltro mat-form-field{
+        width: 100%;
+    }
+
+    .card{
+        margin: 1rem auto;
+        width: 95%;
+    }
+
+
+}  
+@media only screen and (min-width: 769px){
+
+    #menuFiltro{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    #menuFiltro mat-form-field{
+        width: 50%;
+    }
+
+    .card{
+        margin: 1rem auto;
+        width: 30%;
+    }
+    
+
+}  

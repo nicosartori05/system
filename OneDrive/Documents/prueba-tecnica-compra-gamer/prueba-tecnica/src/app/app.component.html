@@ -1,0 +1,61 @@
+<div id="menu">
+  <mat-toolbar class="colorSelected" id="navbar">
+    <h1>
+      <img
+        src="https://compragamer.net/assets/img/logo-fix.png"
+        alt="logo-compra-gamer"
+      />
+    </h1>
+    <span class="example-spacer"></span>
+
+    <button mat-button routerLink="registro">Registro</button>
+
+    <button mat-button routerLink="login">Iniciar sesion</button>
+    <button mat-button routerLink="productos">Productos</button>
+    <button
+      mat-icon-button
+      aria-label="Example icon button with a vertical three dot icon"
+    >
+      <mat-icon>shopping_cart</mat-icon> <span>1</span>
+    </button>
+  </mat-toolbar>
+</div>
+
+<div id="menuResponsive">
+  <mat-toolbar class="colorSelected">
+    <h1>
+      <img
+        src="https://compragamer.net/assets/img/logo-fix.png"
+        alt="logo-compra-gamer"
+      />
+    </h1>
+    <span class="example-spacer"></span>
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+      [matMenuTriggerFor]="menu"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button
+        mat-icon-button
+        aria-label="Example icon button with a vertical three dot icon"
+      >
+        <mat-icon>shopping_cart</mat-icon> <span></span>
+      </button>
+      <button mat-menu-item routerLink="productos">Productos</button>
+      <button mat-menu-item routerLink="registro">Registro</button>
+      <button mat-menu-item routerLink="login">Iniciar sesion</button>
+    </mat-menu>
+  </mat-toolbar>
+</div>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="colorSelected">
+  <p>&copy; Nicolas Sartori - 2023</p>
+</footer>

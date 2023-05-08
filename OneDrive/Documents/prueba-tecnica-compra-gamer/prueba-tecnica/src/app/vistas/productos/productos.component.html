@@ -1,0 +1,37 @@
+<div>
+    <h3>Productos</h3>
+    <p>Seleccione la subcategoria de productos que desea ver</p>
+  </div>
+  <div id="selectSubCategoria">
+    <h4>Categorias</h4>
+    <mat-form-field appearance="fill">
+      <mat-label>Elegir</mat-label>
+      <mat-select>
+        <mat-option value="0">Sin categorias</mat-option>
+        <mat-option ></mat-option>
+      </mat-select>
+      <mat-error>You must make a selection</mat-error>
+      <mat-error>
+        Your selection is invalid
+      </mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+  <ul id="productos">
+    <li>
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>nombre</mat-card-title>
+          <mat-card-subtitle>subcategoria</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="foto" alt="">
+        <mat-card-content>
+          <p>precio</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Sumar al carrito</button>
+        </mat-card-actions>
+      </mat-card>
+    </li>
+  </ul>
